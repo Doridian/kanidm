@@ -25,7 +25,7 @@ git submodule update platform/debian/kanidm_ppa_automation
 docker run --rm -it -e VERBOSE=true -e CI=true \
   --mount "type=bind,src=$PWD,target=/src" \
   --workdir /src \
-  rust:bookworm
+  rust:trixie
 ```
 
 4. In the container install dependencies with:
